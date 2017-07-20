@@ -1,0 +1,163 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/traffic"
+            android:scaleType="centerCrop"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:background="#b420611d"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/icon_patient"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_centerHorizontal="true"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_person_pin_circle_accent_24dp"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/activity_vertical_margin"
+                                    android:paddingBottom="@dimen/activity_vertical_margin"
+                                    android:orientation="vertical">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="phone"
+                                            android:singleLine="true"
+                                            android:padding="@dimen/activity_horizontal_margin"
+                                            android:background="@drawable/card_editbox"
+                                            android:hint="Phone"
+                                            android:textColor="@color/colorPrimary"
+                                            android:id="@+id/editText_phone" />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <EditText
+                                            android:id="@+id/editText_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/card_editbox"
+                                            android:hint="Password"
+                                            android:inputType="textPassword"
+                                            android:padding="@dimen/activity_horizontal_margin"
+                                            android:singleLine="true"
+                                            android:textColor="@color/colorPrimary" />
+                                    </android.support.design.widget.TextInputLayout>
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/input_confirmpassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textPassword"
+                                            android:singleLine="true"
+                                            android:padding="@dimen/activity_horizontal_margin"
+                                            android:background="@drawable/card_editbox"
+                                            android:hint="Confirm Password"
+                                            android:textColor="@color/colorPrimary"
+                                            android:id="@+id/editText_confirmpassword" />
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:text="Already have an Account ?"/>
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:filterTouchesWhenObscured="true"
+                    android:text="Log in"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:id="@+id/button_login"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_arrow_forward_white_24dp"/>
+</android.support.design.widget.CoordinatorLayout>

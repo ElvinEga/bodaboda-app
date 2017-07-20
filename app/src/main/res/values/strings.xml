@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bodaboda App</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- LoginActivity. -->
+    <string name="action_logout">Logout</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="err_msg_phone">Enter your Phone Number</string>
+    <string name="err_msg_phone_valid">Phone not valid</string>
+    <string name="err_msg_password">Enter the Password</string>
+    <array name="dot_colors">
+        <item>#2ecc71</item>
+        <item>#e74c3c</item>
+        <item>#FFBB00</item>
+    </array>
+</resources>
