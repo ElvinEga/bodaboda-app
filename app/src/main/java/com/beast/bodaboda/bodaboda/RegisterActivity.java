@@ -94,6 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
         RegisterRequest registerRequest = new RegisterRequest();
         registerRequest.setUsername(editTextPhone.getText().toString());
         registerRequest.setDeviceId(editTextPhone.getText().toString());
+        registerRequest.setPassword(editTextConfirmpassword.getText().toString());
         Call<Register> call = apiService.postRegister(registerRequest);
         call.enqueue(new Callback<Register>() {
             @Override
