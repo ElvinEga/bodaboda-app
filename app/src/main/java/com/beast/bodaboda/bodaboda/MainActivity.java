@@ -111,13 +111,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         permFineLocation = new Perm(this, Manifest.permission.ACCESS_FINE_LOCATION);
         permCoarseLocation = new Perm(this, Manifest.permission.ACCESS_COARSE_LOCATION);
         sessionManager = new SessionManager(this);
-        sessionManager = new SessionManager(this);
 
         setSupportActionBar(toolbar);
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
         setUpNavigationView();
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
